@@ -304,7 +304,10 @@ struct ThreadState {
   Stats stats;
   SharedState* shared;
 
-  ThreadState(int index) : tid(index), rand(1000 + index), shared(nullptr) {}
+  ThreadState(int index)
+      : tid(index),
+        rand(1000 + index) {
+  }
 };
 
 }  // namespace
