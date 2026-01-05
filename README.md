@@ -44,20 +44,20 @@ cmake -DCMAKE_BUILD_TYPE=Release .. && cmake --build .
 
 First generate the Visual Studio 2017 project/solution files:
 
-```cmd
-mkdir build
+```bash
+mkdir -p build
 cd build
 cmake -G "Visual Studio 15" ..
 ```
 The default default will build for x86. For 64-bit run:
 
-```cmd
+```bash
 cmake -G "Visual Studio 15 Win64" ..
 ```
 
 To compile the Windows solution from the command-line:
 
-```cmd
+```bash
 devenv /build Debug leveldb.sln
 ```
 
